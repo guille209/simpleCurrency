@@ -1,0 +1,198 @@
+
+
+@media(min-width:1200px){
+
+
+}
+@media(min-width:992px){
+
+}
+@media(min-width:768px){
+
+
+}
+/*Si es un movil no mostramos el div de la derecha*/
+@media(max-width:767px){
+
+.panelAdicional {display:none;}
+}
+
+@media(max-width:992px){
+
+.panelAdicional {display:none;}
+
+}
+
+
+body { padding-bottom: 70px;
+	  padding-top: 70px;
+	  height:645px;
+	  background: -webkit-linear-gradient(360deg,rgba(172,200,252,1),rgba(255,255,255,1),rgba(172,200,252,1)); /* For Safari */
+background: -o-linear-gradient(360deg,rgba(172,200,252,1),rgba(255,255,255,1),rgba(172,200,252,1)); /* For Opera 11.1 to 12.0 */
+background: -moz-linear-gradient(360deg,rgba(172,200,252,1),rgba(255,255,255,1),rgba(172,200,252,1)); /* For Firefox 3.6 to 15 */
+background: linear-gradient(360deg,rgba(172,200,252,1),rgba(255,255,255,1),rgba(172,200,252,1)); /* Standard syntax (must be last) */
+
+	  }
+	
+.fuenteEspecial{
+
+font-family: 'Special Elite', cursive;
+
+}
+/*Imagenes del carousel*/
+.peopleCarouselImg img {
+  width: auto;
+  height: 225px;
+  max-height: 225px;
+}
+	
+/*Separacion entre los elementos de la nav bar de abajo*/
+.navbar-text{
+padding-left:1em;
+padding-right:1em;
+
+}
+/*redondear los botones del menu de arriba*/
+.botonesArriba {
+   -webkit-border-radius: 20px;
+   -moz-border-radius: 20px;
+   border-radius: 20px;
+   background: -webkit-linear-gradient(rgba(255,255,255,1),rgba(209,225,255,1)); /* For Safari */
+background: -o-linear-gradient(rgba(255,255,255,1),rgba(209,225,255,1)); /* For Opera 11.1 to 12.0 */
+background: -moz-linear-gradient(rgba(255,255,255,1),rgba(209,225,255,1)); /* For Firefox 3.6 to 15 */
+background: linear-gradient(350deg,rgba(255,255,255,1),rgba(209,225,255,1)); /* Standard syntax (must be last) */	
+}
+/*Ajustar formulario a modal*/
+.input-xlarge{
+
+max-width: 100%
+
+}
+/* Separacion entre los elementos de la nav bar de arriba*/
+.elementoTopBar{
+padding-right:1.3em;
+padding-left:1.2em;
+
+
+}
+
+.panel-heading {
+
+  font: 200 18px/1.5 Helvetica, Verdana, sans-serif;
+
+}
+
+ 
+#conversionList li{
+  text-decoration: none;
+  color: #000;
+  display: block;
+  
+ 
+  -webkit-transition: font-size 0.3s ease, background-color 0.3s ease;
+  -moz-transition: font-size 0.3s ease, background-color 0.3s ease;
+  -o-transition: font-size 0.3s ease, background-color 0.3s ease;
+  -ms-transition: font-size 0.3s ease, background-color 0.3s ease;
+  transition: font-size 0.3s ease, background-color 0.3s ease;
+}
+ 
+#conversionList li:hover {
+  font-size: 15px;
+  background: #F0F6FA;
+}
+
+/* navbar */
+.navbar-default {
+    background-color: #F8F8F8;
+    border-color: #CDCFD1;
+		  background: -webkit-linear-gradient(rgba(255,255,255,1),rgba(209,225,255,1)); /* For Safari */
+background: -o-linear-gradient(rgba(255,255,255,1),rgba(209,225,255,1)); /* For Opera 11.1 to 12.0 */
+background: -moz-linear-gradient(rgba(255,255,255,1),rgba(209,225,255,1)); /* For Firefox 3.6 to 15 */
+background: linear-gradient(rgba(255,255,255,1),rgba(209,225,255,1)); /* Standard syntax (must be last) */
+}
+
+/* titulo aplicacion su fuente color y tamaño */
+.navbar-default .navbar-brand {
+	font-family: 'Special Elite', cursive;
+    font-weight:bold;
+	font-size: 150%;
+}
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+    
+	
+}
+/* link */
+.navbar-default .navbar-nav > li > a {
+    color: #777;
+	
+}
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+    color: #333;
+	font-size: 1.3em;
+}
+.navbar-default .navbar-nav > .active > a, 
+.navbar-default .navbar-nav > .active > a:hover, 
+.navbar-default .navbar-nav > .active > a:focus {
+    color: #555;
+    background-color: #E7E7E7;
+}
+.navbar-default .navbar-nav > .open > a, 
+.navbar-default .navbar-nav > .open > a:hover, 
+.navbar-default .navbar-nav > .open > a:focus {
+    color: #555;
+    background-color: #D5D5D5;
+}
+/* caret */
+.navbar-default .navbar-nav > .dropdown > a .caret {
+    border-top-color: #777;
+    border-bottom-color: #777;
+}
+.navbar-default .navbar-nav > .dropdown > a:hover .caret,
+.navbar-default .navbar-nav > .dropdown > a:focus .caret {
+    border-top-color: #333;
+    border-bottom-color: #333;
+}
+.navbar-default .navbar-nav > .open > a .caret, 
+.navbar-default .navbar-nav > .open > a:hover .caret, 
+.navbar-default .navbar-nav > .open > a:focus .caret {
+    border-top-color: #555;
+    border-bottom-color: #555;
+}
+/* mobile version */
+.navbar-default .navbar-toggle {
+    border-color: #DDD;
+}
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+    background-color: #DDD;
+}
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #CCC;
+}
+
+
+
+
+@media (max-width: 767px) {
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+        color: #777;
+    }
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+        color: #333;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<translations>
+    <translation id="ultimasConversiones">
+        <english>Latest Conversions</english>
+        <spanish>Ultimas conversiones</spanish>
+    </translation>
+	<translation id="idiomabtn">
+        <english> Language</english>
+        <spanish>Idioma</spanish>
+    </translation>
+	<translation id="aboutbtn">
+        <english> About</english>
+        <spanish>Acerca de</spanish>
+    </translation>
+	<translation id="contactbtn">
+        <english> Contact</english>
+        <spanish>Contacto</spanish>
+    </translation>
+	<translation id="loadingConversions">
+        <english>Loading conversions...</english>
+        <spanish>Cargando conversiones...</spanish>
+    </translation>
+	<translation id="noConv">
+        <english>No recent conversions</english>
+        <spanish>No hay conversiones recientes</spanish>
+    </translation>
+	<translation id="myModalLabelAbout">
+        <english>About</english>
+        <spanish>Acerca</spanish>
+    </translation> 
+	<translation id="myModalLabelContact">
+        <english>Contact</english>
+        <spanish>Contacto</spanish>
+    </translation>
+	<translation id="aboutBody">
+        <english>Web Application designed by Guillermo Miranda Garcia(@guille209),Deusto university student, using the Bootstrap Framework and communicating with a server-side programmed in Javascript thanks to Node.js. Conversions are up to date and this application has a mobile version which was built using phonegap.</english>
+        <spanish>Aplicación web diseñada por Guillermo Miranda Garcia (@guille209), estudiante de la universidad de Deusto, usando el Framework de Bootstrap y comunicandose con un servidor desarrollado en javascript gracias a Node.js. Las conversiones estan al dia y esta aplicación tiene una version movil adaptada por phonegap</spanish>
+    </translation>
+	
+	
+	
+	
+	
+	
+	
+	
+	<translation id="counterLoad">
+        <english>Loading...</english>
+        <spanish>Cargando...</spanish>
+    </translation>
+	<translation id="counterNone">
+        <english>There are no conversions made</english>
+        <spanish>Nadie ha hecho conversiones</spanish>
+    </translation>
+	<translation id="counterOne">
+        <english>Just 1 conversion made</english>
+        <spanish>Solo una conversion hecha</spanish>
+    </translation>
+	<translation id="counterTwo">
+        <english> conversions made</english>
+        <spanish> conversiones hechas </spanish>
+    </translation>
+	
+</translations>

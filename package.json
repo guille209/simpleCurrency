@@ -1,0 +1,13 @@
+{
+  "name": "arab2romanconversor",
+  "version": "0.0.1",
+  "dependencies": {
+    "express": "3.x",
+	"cradle": "0.6.4",
+	"sendgrid": "0.4.4"
+  },
+  "engines": {
+    "node": "0.8.x",
+    "npm": "1.1.x"
+  }
+}

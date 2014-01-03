@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	<link href='https://cdn4.iconfinder.com/data/icons/vectory-finance-1/40/currency_exchange_1-128.png' rel='icon' type='image/x-icon'/>
+    <title>Simple Currency Converter</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/bootstrap.css" rel="stylesheet">
+	<link href="css/bootstrap-theme.min.css" rel="stylesheet">
+	<link href="css/bootstrap-theme.css" rel="stylesheet">
+	<link href="css/mycss.css" rel="stylesheet">
+	<link href="css/jquery.share.css" rel="stylesheet">
+	
+
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+	
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+	<script type="text/JavaScript" src="js/jquery-ui-1.10.3.custom.min.js"></script>
+	<script type="text/JavaScript" src="js/jquery-ui-1.10.3.custom.js"></script>
+    <script type="text/JavaScript" src="js/bootstrap.min.js"></script>
+	<script type="text/JavaScript" src="js/bootstrap.js"></script>
+	<script type="text/JavaScript" src="js/javascript.js"></script>
+	<script type="text/JavaScript" src="js/jquery.share.js"></script>
+	<script type="text/JavaScript" src="js/jquery.snow.js"></script>
+	
+	
+
+	<link href='http://fonts.googleapis.com/css?family=Special+Elite' rel='stylesheet' type='text/css'>
+	
+  </head>
+  <body>
+	<div class ="container">
+		 
+		<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+		
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				</button>
+				<div class="navbar-brand fuenteEspecial">
+					Simple Currency
+				</div>
+			</div>
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				<ul class="nav navbar-nav navbar-right">
+					<li class="elementoTopBar"><button type="button" class="btn btn-inverse  navbar-btn botonesArriba" id="btnLanguage"><span class="glyphicon glyphicon-th-large" id="idiomabtn"> Language</span></button></li>
+					<li class="elementoTopBar"><button type="button" class="btn btn-inverse  navbar-btn botonesArriba" data-toggle="modal" data-target="#contactModal"><span class="glyphicon glyphicon-paperclip" id="contactbtn"> Contact</span></button></li>
+					<li class="elementoTopBar"><button type="button" class="btn btn-inverse  navbar-btn botonesArriba" data-toggle="modal" data-target="#aboutModal"><span class="glyphicon glyphicon-info-sign" id="aboutbtn"> About</span></button></li>					
+				</ul>
+			</div>
+		
+		</nav>
+		
+		
+		
+		
+		<!--INPUT BOXES FOR CONVERSIONS -->
+		<div class="row">
+			<div class="col-md-12">
+				<div class="panel panel-primary">
+					<div class="panel-body">
+						<br>
+						<div class =" input-group input-group-lg">
+							<div class="input-group-btn">
+								<button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown"><div id="cur1"><span class="glyphicon glyphicon-sort-by-attributes"></span></div><span class="caret"></span></button>
+									<ul class="dropdown-menu currencyOption">
+										<!--El title importante para enviar eso al server para el web service-->
+										<li class="box1" title="AUD"><a href="#">Australian Dollar</a></li>
+										<li class="box1" title="BRL"><a href="#">Brazilian Real</a></li>
+										<li class="box1" title="GBP"><a href="#">British pound</a></li>
+										<li class="box1" title="CAD"><a href="#">Canadian Dollar</a></li>
+										<li class="box1" title="USD"><a href="#">Dollar</a></li>
+										<li class="box1" title="EUR"><a href="#">Euro</a></li>	
+										<li class="box1" title="CHF"><a href="#">Swiss Franc</a></li>
+										<li class="box1" title="JPY"><a href="#">Japanese Yen</a></li>
+										<li class="box1" title="SEK"><a href="#">Swedish Krona</a></li>
+										
+										
+											
+											
+							
+									</ul>
+							</div>
+							<input type="text" class="form-control" id="inputBox1" onkeyup="setTimeout('convertBox1Box2()',4000);">
+							<span class="input-group-addon">.00</span>
+						</div>
+						<br>
+						
+						
+						
+							
+						<br>
+						<div class =" input-group input-group-lg">
+							<div class="input-group-btn">
+								<button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown"><div id="cur2"><span class="glyphicon glyphicon-sort-by-attributes"></span></div><span class="caret"></span></button>
+									<ul class="dropdown-menu currencyOption">
+										<li class="box2" title="AUD"><a href="#">Australian Dollar</a></li>
+										<li class="box2" title="BRL"><a href="#">Brazilian Real</a></li>
+										<li class="box2" title="GBP"><a href="#">British pound</a></li>
+										<li class="box2" title="CAD"><a href="#">Canadian Dollar</a></li>
+										<li class="box2" title="USD"><a href="#">Dollar</a></li>
+										<li class="box2" title="EUR"><a href="#">Euro</a></li>	
+										<li class="box2" title="CHF"><a href="#">Swiss Franc</a></li>
+										<li class="box2" title="JPY"><a href="#">Japanese Yen</a></li>
+										<li class="box2" title="SEK"><a href="#">Swedish Krona</a></li>
+
+
+
+									</ul>
+							</div>
+							<input type="text" class="form-control" id="inputBox2" onkeyup="setTimeout('convertBox2Box1()',4000);">
+							<span class="input-group-addon">.00</span>
+						</div>				
+
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		
+		<!--LATEST CONVERSIONS -->
+		<div class="row">
+			<div class="col-md-5">
+				<div class="panel panel-info">
+					<div class="panel-heading" id="ultimasConversiones">Latest Conversions
+					</div>
+							<ul class="list-group"id="conversionList">
+								<li id="loadingConversions"> Loading conversions...</li>
+							</ul>
+				</div>
+			</div>
+		<!--Carousel-->	
+			<div class="col-md-7 panelAdicional">
+				<div class="panel panel-primary ">
+					<div class="panel-body">
+								
+
+
+
+<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner">
+    <div class="item active">
+      <img class="peopleCarouselImg" src="http://www.accendomarkets.com/wp-content/uploads/2012/04/CurrencyTrading.jpg">
+      <div class="carousel-caption">
+	  <p><font color="#000000" face="Verdana" size="3">This is an example of media query</font></p>
+      </div>
+    </div>
+      <div class="item">
+      <img src="http://profalbrecht.files.wordpress.com/2011/04/currencies.jpg"/>
+      <div class="carousel-caption">
+      <p><font color="#000000" face="Verdana" size="3">Try resizing your browser</font></p>
+	  </div>
+    </div>
+	  <div class="item">
+      <img src="http://thumbs.dreamstime.com/x/group-four-different-currencies-symbols-5819241.jpg"/>
+      <div class="carousel-caption">
+	  <p><font color="#000000" face="Verdana" size="3">Ups this slider has just disappeared!</font></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Controls -->
+  <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left"></span>
+  </a>
+  <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right"></span>
+  </a>
+</div>
+
+
+
+								
+
+					</div>
+				
+				</div>
+			</div>
+		</div>
+		
+		<!-- FOOTER -->
+		<nav class="navbar navbar-default navbar-fixed-bottom" role="navigation">
+			<p class="navbar-text" id="copyright" onMouseOver="idioma("");">&copy;</p>
+			<strong>
+				<p class="navbar-text navbar-right" id="counterLoad">Loading...</p>
+			</strong>	<div id="myshare" class="text-right"></div>
+		</nav>
+		
+		
+		
+		
+		
+		
+
+<!-- aboutModal -->
+<div class="modal fade" id="aboutModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title" id="myModalLabelAbout">About</h4>
+      </div>
+      <div class="modal-body" id="aboutBody">
+        Web Application designed by Guillermo Miranda Garcia(<a href="https://twitter.com/guille209" target="_blank">@guille209</a>),Deusto university student, using the Bootstrap Framework and communicating with a server-side programmed in Javascript thanks to Node.js. Conversions are up to date and this application has a mobile version which was built using phonegap.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span></button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+<!-- contactModal-->
+<div class="modal fade" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title" id="myModalLabelContact">Contact</h4>
+      </div>
+      <div class="modal-body">
+			
+			<textarea class="input-xlarge " id="textarea" cols="80" rows="3" placeholder="Write here your suggestion/problem/whatever..."></textarea>
+			
+			
+
+
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span></button>
+		<button type="button" class="btn btn-default" data-dismiss="modal" onclick=sendEmail();><span class="glyphicon glyphicon-envelope"></span></button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+<!-- email confirmed-->
+<div class="alert alert-success" id="successAlert" style="display:none;">
+    <a href="#" class="close" data-dismiss="alert" >&times;</a>
+    <strong>Success!</strong> Your message has been sent successfully.
+</div>
+<!-- email not confirmed-->	
+<div class="alert alert-warning" id="failAlert" style="display:none;">
+    <a href="#" class="close" data-dismiss="alert">&times;</a>
+    <strong>Error!</strong> A problem has been occurred while sending your message. Check your internet connection
+</div>	
+		
+	</div>
+  </body>
+</html>
